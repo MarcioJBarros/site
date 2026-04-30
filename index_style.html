@@ -1,0 +1,92 @@
+<!-- DOCTYPE HTML é a versão no caso 5.0 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tutorial da Faculdade Estácio de Sá</title>
+<!-- style é onde colocar as linhas de propriedades sobre cores de fundo, texto, alinhamento e outros -->
+<style>
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+body {
+    background-color: Linen;
+}
+h1 {
+    color: green;
+    margin-left: 40px;
+	text-align:center;
+	font-size:4rem;
+}
+h2 {
+    color: green;
+    margin-left: 40px;
+	font-size:2rem;
+}
+h3 {
+    color: black;
+    margin-left: 40px;
+	font-size:2rem;
+}
+h4 {
+    color: red;
+    margin-left: 40px;
+	font-size:2rem;
+}
+p {
+    text-align: justify;
+}
+
+table, th, td {
+  border:1px solid red;
+}
+</style>
+
+</head>
+<!-- body é corpo da página do site -->
+<body style="background-color:yellow;">
+<h1 style="background-color:yellow;">Desenvolvendo HTML estudo acadêmico Estácio EAD</h1>
+<!-- h1 é o título (no caso o primeiro título) -->
+<h2>Aprendendo HTML</h1>
+<p>Estudando HTML na Estácio EAD.</p>
+<a href="https://www.estacio.br">Visite Estácio EAD</a>
+<h3>Criando uma Tabela</h2>
+<!-- p é parágrafo ou linha de texto -->
+<p>Entendo os campos de uma tabela na HTML.</p>
+<!-- table é a tabela da página ou do site -->
+<table style="width:30%">
+  <tr> <!-- td é a coluna da Tabela --> <!-- tr é a linha da Tabela -->
+    <th>Empresa</th>
+    <th>Contato</th>
+    <th>Cidade</th>
+  </tr>
+  <tr>
+    <td>DXC Technology</td>
+    <td>Márcio Barros</td>
+    <td>Brasil</td>
+  </tr>
+  <tr>
+    <td>Faculdade Estácio de Sá</td>
+    <td>Ana Paula</td>
+    <td>Brasil</td>
+  </tr>
+</table>
+<h4>Fomulário de Dados</h1>
+<p>Estudando Forms no HTML na Estácio EAD.</p>
+<!-- form é formulário da página ou do site -->
+<form>
+ <label for="nome">Nome: </label>
+ <input type="text" name="nome" required>
+ <br>
+ <label for="website">Website: </label>
+ <input type="url" name="website" required pattern="https?://.+">
+ <br>
+ <label for="tel">Idade:</label>
+ <input type="number" size="6" name="idade" min="18" max="99" value="21">
+ <br>
+ <input type="submit" value="Enviar">
+</form>
+
+</body>
+</htm>
