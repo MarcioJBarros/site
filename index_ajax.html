@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela dinâmica com AJAX</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f4f4f4; }
+    button { padding: 8px 12px; }
+  </style>
+</head>
+<body>
+
+  <h2>Usuários (AJAX)</h2>
+  <button onclick="carregarUsuarios()">Carregar usuários</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Cidade</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaUsuarios">
+      <!-- dados via AJAX -->
+    </tbody>
+  </table>
+
+  <script src="script_ajax.js"></script>
+</body>
+</html>
