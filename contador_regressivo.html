@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador Regressivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #contador {
+            font-size: 48px;
+            color: #e74c3c;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contador Regressivo</h1>
+    <div id="contador">10</div>
+    <br>
+    <button onclick="iniciarContador()">Iniciar</button>
+
+    <script>
+        function iniciarContador() {
+            let numero = 10;
+            const contador = document.getElementById("contador");
+
+            contador.textContent = numero;
+
+            const intervalo = setInterval(() => {
+                numero--;
+                contador.textContent = numero;
+
+                if (numero === 0) {
+                    clearInterval(intervalo);
+                }
+            }, 1000); // 1 segundo
+        }
+    </script>
+
+</body>
+</html>

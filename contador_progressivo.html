@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador até 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #contador {
+            font-size: 48px;
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contador até 10</h1>
+    <div id="contador">0</div>
+    <br>
+    <button onclick="iniciarContador()">Iniciar</button>
+
+    <script>
+        function iniciarContador() {
+            let numero = 0;
+            const contador = document.getElementById("contador");
+
+            const intervalo = setInterval(() => {
+                numero++;
+                contador.textContent = numero;
+
+                if (numero === 10) {
+                    clearInterval(intervalo);
+                }
+            }, 1000); // 1 segundo
+        }
+    </script>
+
+</body>
+</html>
