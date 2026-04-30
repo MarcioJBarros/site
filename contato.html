@@ -1,0 +1,38 @@
+<header>
+    <h1>VM Suporte e Automação</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Fale conosco</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="tecnologias.html">Tecnologias</a>
+    </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitação de Serviço</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<?php include 'menu.php'; ?>
+
+<section>
+    <div class="card">
+        <h2>Solicitar Serviço</h2>
+
+        <form action="enviar.html" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Descreva o serviço" required></textarea>
+            <button type="submit">Enviar Solicitação</button>
+        </form>
+    </div>
+</section>
+
+<footer>© 2026 - VM Suporte e Automação</footer>
+</body>
+</html>
